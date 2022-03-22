@@ -29,19 +29,22 @@ button {
 }
 /* 1  блок*/
 .header {
-    background: url('../assets/img/start-screen-puppy.png') 96%100%/698px 728px no-repeat, url('../assets/img/header-background.jpg') center no-repeat;
+    background: url('../assets/img/header-background.jpg') center no-repeat;
     margin-bottom: 80px;
 }
 .container_header {
-    max-width: 1280px;
-    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 0 25px;
 }
 .container  {
     max-width: 1280px;
     background-color: #FFFFFF;
 }
 .header_inner {
-    padding: 60px 40px 225px 40px; 
+    padding-top: 60px; 
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +58,7 @@ h2 {
     font-weight: 400; 
     font-style: normal;
     font-weight: normal;
-    line-height: 105%;
+    line-height: 35px;
 }
 .header_logo p {
     font-family: Arial;
@@ -112,25 +115,32 @@ h1 {
     font-style: normal;
     font-weight: normal;
     font-size: 44px;
-    line-height: 130%;
+    line-height: 58px;
     align-items: center;
     color: #FFFFFF;
     margin-bottom: 42px;
     margin-top: 0px
 }
-.main_title p {
+.start_screen{
+    display: flex;
+}
+.start_text{
+    padding-top: 163px;
+
+}
+.start_text p {
     line-height: 24px;
     font-size: 15px;
     font-style: normal;
     font-weight: normal;
     color: #CDCDCD;
-    margin-bottom: 41px;
+    margin-bottom: 57px;
     width: 460px;
 }
 .hi_btn {
     font-family: Georgia;
     font-size: 17px;
-    line-height: 140%;
+    line-height: 22px;
     letter-spacing: 1px;
     color: #292929;
     width: 207px;
@@ -140,6 +150,9 @@ h1 {
     text-decoration: none;
     padding: 15px 45px;
     margin-bottom: 242px;
+}
+.start_img{
+    padding-left: 42px;
 }
 /*2-блок*/
 .container_about {
@@ -159,7 +172,7 @@ h1 {
 .about_text {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 25px;
     width: 430px;
 }
 .about_title {
@@ -313,8 +326,6 @@ h1 {
     transform: translateY(-50%);
     left: 52px; 
 }
-} */
-
     /* 4 блок*/
 
 .help_shelter {
@@ -323,7 +334,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 43px;
+    margin-bottom: 42px;
+    
 }
 .title_shelter {
     font-family: 'Georgia';
@@ -397,20 +409,21 @@ h1 {
     
     /* 5 блок */
 .donation {
-    margin: 0 auto;
-    font-family: Georgia;
+    font-family: 'Georgia';
+    padding-bottom: 102px;
+    background: #F6F6F6;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    margin-bottom: 100px;
-    letter-spacing: 1px;
-    background: #F6F6F6;
+    gap: 30px;
+
 } 
-.donat_img {
+.donat_img{
+    padding: 91px 0 10px 0;
+
 }
 .donat_body {
-    margin-top: 79px;
+    margin-top: 80px;
     width: 380px;
 }
 .donat_title{
@@ -456,40 +469,50 @@ h1 {
     line-height: 18px;
     letter-spacing: 0.06em;
     color: #B2B2B2;
-    /* width: 380px; */
     height: 72px;
 }
     /* 5 блок */
 .footer {
-    margin: 0 auto;
     max-width: 1280px;
-    background: url('../assets/img/footer-puppy.png') 98%90% no-repeat, url('../assets/img/footer-gradient-background.jpg')  no-repeat;
-  
+    background: url('../assets/img/footer-gradient-background.jpg')  no-repeat;
+    padding-top: 37px;
 }
 .content_footer {
     display: flex;
-    font-family: Georgia;
+    font-family: 'Georgia';
     padding-left: 40px;
-    padding-top: 56px;
+    gap: 160px;
 }
 .contact { 
-    margin-right: 160px;
+    padding-top: 17px;
     width: 279px;
 }
 .footer_title {
     font-size: 35px;
-    line-height: 130%;
+    line-height: 45px;
     color: #FFFFFF;
-    margin-bottom: 40px;
     letter-spacing: 0.06em;
 }
 .date {
     font-size: 20px;
     line-height: 23px;
     color: #F1CDB3;
+    letter-spacing: 0.06em;
     display: flex;
     align-items: center;
     margin-bottom: 45px;
+    margin-top: 40px;
+
+}
+.date_loc{
+    font-size: 20px;
+    line-height: 23px;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+
 }
 .img_email {
     background: url('../assets/svg/mail.svg') center no-repeat;
@@ -506,7 +529,8 @@ h1 {
 .date p{
     letter-spacing: 0.06em;
 }
-.adress{
+.location{
+    padding-top: 15px;
     width: 303px;
 }
 .img_location {
@@ -515,5 +539,8 @@ h1 {
     height: 32px;
     margin-right: 20px;
     flex: none;
+}
+.footer_img{
+
 }
     
