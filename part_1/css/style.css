@@ -1,10 +1,7 @@
-body{
- 
-}
 .inner {
     font-family: 'Arial', sans-serif;
     font-size: 15px;
-        color: #545454;
+    color: #545454;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -35,6 +32,8 @@ button {
 .container  {
     max-width: 1280px;
     background-color: #FFFFFF;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 /* 1  блок*/
 .container_header {
@@ -45,8 +44,9 @@ button {
 .header {
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
-    margin: 0 25px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .header_inner {
     padding-top: 60px; 
@@ -126,8 +126,6 @@ h1 {
 .start_text{
     padding-top: 163px;
     padding-bottom: 256px;
-    margin-left: 40px;
-
 }
 .start_text p {
     line-height: 24px;
@@ -176,10 +174,11 @@ h1 {
 .about {
     display: flex;
     justify-content: center;
-    gap: 120px;
     background: #FFFFFF;
-    margin-bottom: 100px;
+    margin: 0 auto;
+    max-width: 1200px;
     margin-top: 80px;
+    gap: 120px;
 }
 .about_text {
     display: flex;
@@ -212,9 +211,15 @@ h1 {
     letter-spacing: 1px;
 }
 /* -----SEARCH----- */
+.background{
+    background: #F6F6F6;
+
+}
 .pets {
     background: #F6F6F6;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .title {
     font-family: Georgia;
@@ -254,12 +259,12 @@ h1 {
 .arrow_left{
     background: url('../assets/svg/Arrow_right.svg') center no-repeat;
     transform: translateY(370%);
-    left: 40px;
+    left: 0px;
 }
 .arrow_right{
     background: url('../assets/svg/Arrow_left.svg') center no-repeat;
     transform: translateY(370%);
-    right: 40px;
+    right: 0px;
 } 
 .arrow_left:hover{
     background: #FDDCC4 url('../assets/svg/Arrow_right.svg') center no-repeat;
@@ -325,13 +330,15 @@ h1 {
     gap: 95px;
 }
     /* 4 блок*/
-.help_shelter {
+.help_shelter { 
+    margin: 0 auto;
+    max-width: 1200px;
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
     transition: 0.2s;
     
 }
@@ -407,21 +414,19 @@ h1 {
     
     /* 5 блок */
 .donation {
+    margin: 0 auto;
+    max-width: 1200px;
     font-family: 'Georgia';
-    padding-bottom: 100px;
+    margin-top: -55px;
     background: #F6F6F6;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-
+    width: 915px;
+    padding-top: 80px;
 } 
-.donat_img{
-    padding: 91px 0 10px 0;
-
-}
 .donat_body {
-    margin-top: 80px;
     width: 380px;
 }
 .donat_title{
@@ -471,23 +476,25 @@ h1 {
     letter-spacing: 0.06em;
     color: #B2B2B2;
     height: 72px;
-    width: 410px;
+    max-width: 410px;
 }
     /* 5 блок */
-.footer {
-    max-width: 1280px;
+.footer{
     background: url('../assets/img/footer-gradient-background.jpg')  no-repeat;
-    padding-top: 37px;
 }
-.content_footer {
+.footer_inner{
     display: flex;
     font-family: 'Georgia';
-    padding-left: 40px;
-    gap: 160px;
+    padding-top: 35px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 36px;
+    padding-bottom: 60px;
 }
 .contact { 
     padding-top: 20px;
-    width: 279px;
+    padding-right: 40px;
 }
 .footer_title {
     font-size: 35px;
@@ -541,7 +548,7 @@ h1 {
 }
 .location{
     padding-top: 20px;
-    width: 303px;
+    width: 340px;
 }
 .img_location {
     background: url('../assets/svg/pin.svg') center no-repeat;
@@ -551,6 +558,13 @@ h1 {
     flex: none;
 }
 .footer_img{
-
+    background: url(../assets/svg/footer-puppy.svg) no-repeat;
+    width: 300px;
+    background-size: cover;
+}
+@media (max-width: 1280px){
+    .footer_title{
+        font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1280 - 320)));
+    }
 }
     
